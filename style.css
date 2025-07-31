@@ -1,0 +1,122 @@
+body {
+  font-family: cursive, cursive;
+  background-color: #fae9bf;
+  padding: 30px;
+  background-image: url('forestbg2.avif'); 
+  background-size: cover;        /* Stretch to fill the screen */
+  background-repeat: no-repeat;  /* Prevent tiling */
+  background-position: center;   /* Center the image */
+}
+h1 {
+  color: teal ;
+}
+.container {
+  max-width: 500px;
+  margin: auto;
+  background: rgb(248, 235, 194);
+  padding: 20px;
+  border-radius: 30px; /* Rounded corners */
+  box-shadow:
+    5px 5px 15px rgba(0, 0, 0, 0.1),
+    -5px -5px 15px rgba(255, 255, 255, 0.7); /* ✨ Soft bubbly shadows */
+  transition: transform 0.2s ease-in-out;
+}
+
+h1 {
+  text-align: center;
+}
+
+form input,
+form textarea,
+form select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 20px;
+  background: #f8ebc2; /* Match or complement the container background */
+  box-shadow: 
+    6px 6px 12px rgba(179, 111, 77, 0.642),
+   -6px -6px 12px rgba(237, 235, 233, 0.7);
+  font-family: inherit;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+  outline: none;
+  box-shadow: 
+    inset 4px 4px 8px rgba(0, 0, 0, 0.1),
+    inset -4px -4px 8px rgba(255, 255, 255, 0.6);
+}
+
+form button {
+  background-color: #0b9290;
+  color: rgb(249, 249, 249);
+  border: none;
+  cursor: pointer;    
+  border-radius: 20px;
+  font-size: 18px;
+  display: block;
+  margin: 20px auto; /* This centers the button */
+}
+
+form button:hover {
+  background-color:#0eb35e;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.task {
+  padding: 10px;
+  margin: 10px 0;
+  background: #eee;
+  border-left: 5px solid #ffca85ba;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.task.completed {
+  background-color: #aaf0a4;
+  text-decoration: line-through;
+}
+
+.task.low {
+  border-left-color: rgb(166, 217, 249);
+}
+.task.medium {
+  border-left-color: rgb(38, 86, 158);
+}
+.task.high {
+  border-left-color: rgb(17, 22, 77);
+}
+
+.task .actions {
+  margin-top: 10px;
+}
+
+.task .actions button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button.delete {
+  background-color: #ed6673;
+  color: white;
+}
+button.edit {
+  background-color: #edd794;
+}
+button.complete {
+  background-color: #99dfa9;
+  color: white;
+}
